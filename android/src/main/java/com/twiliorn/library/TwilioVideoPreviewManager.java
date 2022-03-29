@@ -7,7 +7,7 @@
 
 package com.twiliorn.library;
 
-import androidx.annotation.Nullable;
+import android.support.annotation.Nullable;
 
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.common.MapBuilder;
@@ -37,11 +37,6 @@ public class TwilioVideoPreviewManager extends SimpleViewManager<TwilioVideoPrev
       } else {
         view.setScalingType(RendererCommon.ScalingType.SCALE_ASPECT_FILL);
       }
-    }
-
-    @ReactProp(name = "applyZOrder", defaultBoolean = true)
-    public void setApplyZOrder(TwilioVideoPreview view, boolean applyZOrder) {
-      view.applyZOrder(applyZOrder);
     }
 
     @Override
