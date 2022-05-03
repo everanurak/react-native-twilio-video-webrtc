@@ -524,7 +524,7 @@ public class CustomTwilioVideoView extends View implements LifecycleEventListene
 
         WritableArray supportedCodecs = new WritableNativeArray();
 
-        VideoCodec videoCodec =  isH264Supported ? (new H264Codec()) : (new Vp8Codec());
+        VideoCodec videoCodec =  new H264Codec();
         // VP8 is supported on all android devices by default
         supportedCodecs.pushString(videoCodec.toString());
 
